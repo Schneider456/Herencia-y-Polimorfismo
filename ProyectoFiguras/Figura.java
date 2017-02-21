@@ -15,4 +15,8 @@ public class Figura {
     public float accedeArea () {
         return area;
     }
+    
+    public void calculaArea () {
+        System.out.println("Ups!!");
+    }
 }
