@@ -6,6 +6,7 @@
  * @version (a version number or a date)
  */
 
+import java.util.ArrayList;
 public class Principal {
     public static void main (String []args) {
         
@@ -34,5 +35,25 @@ public class Principal {
         for (int j = 0; j < arregloFiguras.length; j++) {
             arregloFiguras[j].accedeArea(); 
         }
+        
+        for (Figura fig : arregloFiguras) {
+            fig.calculaArea();
+        }
+        
+        for (Figura fig1 : arregloFiguras) {
+            fig1.accedeArea();
+        }
+        
+        ArrayList<Figura> figu = new ArrayList<Figura>();
+        for (int k = 0; k < figu.size(); k++) {
+            Figura c = figu.get(k);
+            c.calculaArea();
+        }
+        
+        for (int l = 0; l < figu.size(); l++) {
+            Figura c = figu.get(l);
+            c.accedeArea();
+        }
+        
     }
 }
