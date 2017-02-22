@@ -19,4 +19,8 @@ public class Figura {
     public void calculaArea () {
         System.out.println("Ups!!");
     }
+    
+    public String dimeNombre () {
+        return "" + area;
+    }
 }

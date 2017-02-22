@@ -11,16 +11,16 @@ public class Principal {
     public static void main (String []args) {
         
         Triangulo t1 = new Triangulo(3, 4);
-        t1.calculaArea();
-        System.out.println("El area del triangulo es: " + t1.accedeArea());
+        //t1.calculaArea();
+        //System.out.println("El area del triangulo es: " + t1.accedeArea());
         
         Circulo c1 = new Circulo(8);
-        c1.calculaArea();
-        System.out.println("El area del circulo es: " + c1.accedeArea());
+        //c1.calculaArea();
+        //System.out.println("El area del circulo es: " + c1.accedeArea());
         
         Cuadrado cu1 = new Cuadrado(5);
-        cu1.calculaArea();
-        System.out.println("El area del cuadrado es: " + cu1.accedeArea());
+        //cu1.calculaArea();
+        //System.out.println("El area del cuadrado es: " + cu1.accedeArea());
         
         Figura []arregloFiguras = new Figura[3]; 
         
@@ -31,19 +31,20 @@ public class Principal {
         for (int i = 0; i < arregloFiguras.length; i++) {
             arregloFiguras[i].calculaArea(); 
         }
-        
+        /**
         for (int j = 0; j < arregloFiguras.length; j++) {
             arregloFiguras[j].accedeArea(); 
         }
-        
+        **/
         for (Figura fig : arregloFiguras) {
-            fig.calculaArea();
+            System.out.println(fig.dimeNombre());
         }
-        
+        /**
         for (Figura fig1 : arregloFiguras) {
             fig1.accedeArea();
         }
-        
+        **/
+        /**
         ArrayList<Figura> figu = new ArrayList<Figura>();
         for (int k = 0; k < figu.size(); k++) {
             Figura c = figu.get(k);
@@ -54,6 +55,8 @@ public class Principal {
             Figura c = figu.get(l);
             c.accedeArea();
         }
+        **/
+        
         
     }
 }
