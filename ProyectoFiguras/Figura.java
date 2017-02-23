@@ -20,7 +20,8 @@ public class Figura {
         System.out.println("Ups!!");
     }
     
-    public String dimeNombre () {
+    @Override
+    public String toString () {
         return "" + area;
     }
 }

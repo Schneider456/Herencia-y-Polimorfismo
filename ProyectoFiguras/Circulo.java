@@ -15,8 +15,13 @@ public class Circulo extends Figura {
     public void calculaArea() {
         area = pi * radio * radio;
     }
-    
+    /*
     public String dimeNombre () {
         return "Circulo: " + super.dimeNombre();
+    }
+    */
+    @Override
+    public String toString () {
+        return "Circulo con area = " + super.toString();
     }
 }

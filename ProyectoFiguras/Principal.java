@@ -22,11 +22,14 @@ public class Principal {
         //cu1.calculaArea();
         //System.out.println("El area del cuadrado es: " + cu1.accedeArea());
         
-        Figura []arregloFiguras = new Figura[3]; 
+        Circulo c2 = new Circulo(10);
+        
+        Figura []arregloFiguras = new Figura[4]; 
         
         arregloFiguras[0] = t1;
         arregloFiguras[1] = c1;
         arregloFiguras[2] = cu1;
+        arregloFiguras[3] = c2;
         
         for (int i = 0; i < arregloFiguras.length; i++) {
             arregloFiguras[i].calculaArea(); 
@@ -37,7 +40,7 @@ public class Principal {
         }
         **/
         for (Figura fig : arregloFiguras) {
-            System.out.println(fig.dimeNombre());
+            System.out.println(fig);
         }
         /**
         for (Figura fig1 : arregloFiguras) {
