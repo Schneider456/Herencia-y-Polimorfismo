@@ -14,7 +14,7 @@ public class Principal {
         //t1.calculaArea();
         //System.out.println("El area del triangulo es: " + t1.accedeArea());
         
-        Circulo c1 = new Circulo(8);
+        Circulo c1 = new Circulo(5);
         //c1.calculaArea();
         //System.out.println("El area del circulo es: " + c1.accedeArea());
         
@@ -22,8 +22,8 @@ public class Principal {
         //cu1.calculaArea();
         //System.out.println("El area del cuadrado es: " + cu1.accedeArea());
         
-        Circulo c2 = new Circulo(10);
-        
+        Circulo c2 = new Circulo(5);
+        /*
         Figura []arregloFiguras = new Figura[4]; 
         
         arregloFiguras[0] = t1;
@@ -34,20 +34,20 @@ public class Principal {
         for (int i = 0; i < arregloFiguras.length; i++) {
             arregloFiguras[i].calculaArea(); 
         }
-        /**
+        
         for (int j = 0; j < arregloFiguras.length; j++) {
             arregloFiguras[j].accedeArea(); 
         }
-        **/
+        
         for (Figura fig : arregloFiguras) {
             System.out.println(fig);
         }
-        /**
+        
         for (Figura fig1 : arregloFiguras) {
             fig1.accedeArea();
         }
-        **/
-        /**
+        
+        
         ArrayList<Figura> figu = new ArrayList<Figura>();
         for (int k = 0; k < figu.size(); k++) {
             Figura c = figu.get(k);
@@ -58,7 +58,13 @@ public class Principal {
             Figura c = figu.get(l);
             c.accedeArea();
         }
-        **/
+        */
+        
+        if (c1.equals(t1)) {
+            System.out.println("Iguales");
+        } else {
+            System.out.println("Diferentes");
+        }
         
         
     }

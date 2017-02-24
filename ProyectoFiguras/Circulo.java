@@ -24,4 +24,13 @@ public class Circulo extends Figura {
     public String toString () {
         return "Circulo con area = " + super.toString();
     }
+    
+    @Override
+    public boolean equals (Object fig) {
+        if (fig instanceof Circulo) {
+            return this.radio == ((Circulo)fig).radio;
+        } else {
+            return false;
+        }
+    }
 }

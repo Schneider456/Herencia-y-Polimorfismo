@@ -26,4 +26,9 @@ public class Triangulo extends Figura {
     public String toString () {
         return "Triangulo con area = " + super.toString();
     }
+    
+   @Override
+   public boolean equals (Object fig) {
+        return this.area == ((Figura)fig).area;
+   }
 }
