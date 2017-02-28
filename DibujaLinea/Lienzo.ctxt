@@ -1,4 +1,5 @@
 #BlueJ class context
 comment0.params=g
 comment0.target=void\ paintComponent(java.awt.Graphics)
+comment0.text=private\ ArrayList<Figura>\ figuras;\r\n\ \ \ \ \r\n\ \ \ \ public\ Lienzo\ ()\ {\r\n\ \ \ \ \ \ \ \ figuras\ \=\ new\ ArrayList<Figura>();\r\n\ \ \ \ }\r\n
 numComments=1

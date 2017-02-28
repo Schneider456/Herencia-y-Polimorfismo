@@ -1,32 +1,22 @@
-/**
- * Write a description of class Figura here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 
-public class Figura {
-    protected float area;
+abstract public class Figura {
+    private int posx;
+    private int posy;
     
-    public Figura () {
-        area = 0;
+    public Figura (int x, int y) {
+        posx = x;
+        posy = y;
     }
     
-    public float accedeArea () {
-        return area;
+    protected int dimeX () {
+        return posx;
     }
     
-    public void calculaArea () {
-        System.out.println("Ups!!");
+    protected int dimeY () {
+        return posy;
     }
     
-    @Override
-    public String toString () {
-        return "" + area;
-    }
-    
-    @Override
-    public boolean equals (Object fig) {
-        return this.area == ((Figura)fig).area;
-    }
+    abstract public void dibuja (Graphics g);
 }

@@ -1,36 +1,16 @@
-/**
- * Write a description of class Circulo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 public class Circulo extends Figura {
     private float radio;
-    float pi = 3.1416F;
-    public Circulo (float r) {
+    
+    public Circulo (int x, int y, float r) {
+        super(x, y);
         radio = r;
     }
     
-    public void calculaArea() {
-        area = pi * radio * radio;
-    }
-    /*
-    public String dimeNombre () {
-        return "Circulo: " + super.dimeNombre();
-    }
-    */
     @Override
-    public String toString () {
-        return "Circulo con area = " + super.toString();
-    }
-    
-    @Override
-    public boolean equals (Object fig) {
-        if (fig instanceof Circulo) {
-            return this.radio == ((Circulo)fig).radio;
-        } else {
-            return false;
-        }
+    public void dibuja (Graphics g) {
+        
     }
 }

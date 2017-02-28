@@ -1,34 +1,18 @@
-/**
- * Write a description of class Triangulo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 public class Triangulo extends Figura {
     private float base;
     private float altura;
     
-    public Triangulo (float a, float b) {
+    public Triangulo (int x, int y, float a, float b) {
+        super(x, y);
         base = b;
         altura = a;
     }
     
-    public void calculaArea () {
-        area = base * altura / 2;
+    @Override
+    public void dibuja (Graphics g) {
+        
     }
-    /*
-    public String dimeNombre () {
-        return "Triangulo: " + super.dimeNombre();
-    }
-    */
-   @Override
-    public String toString () {
-        return "Triangulo con area = " + super.toString();
-    }
-    
-   @Override
-   public boolean equals (Object fig) {
-        return this.area == ((Figura)fig).area;
-   }
 }
