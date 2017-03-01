@@ -1,0 +1,21 @@
+import javax.swing.JPanel;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.util.ArrayList;
+
+public class Lienzo extends JPanel {
+    private ArrayList<Figura> figuras;
+    
+    public Lienzo () {
+        figuras = new ArrayList<Figura>();
+        figuras.add(new Circulo(50, 50, 50));
+        figuras.add(new Cuadrado(100, 100, 50));
+    }
+    
+    @Override
+    public void paintComponent(Graphics g) {
+        for (Figura f : figuras) {
+            f.dibuja(g);
+        }
+    }
+}

@@ -1,11 +1,6 @@
 #BlueJ class context
-comment0.params=a\ b
-comment0.target=Triangulo(float,\ float)
-comment1.params=
-comment1.target=void\ calculaArea()
-comment2.params=
-comment2.target=java.lang.String\ toString()
-comment2.text=\r\n\ \ \ \ public\ String\ dimeNombre\ ()\ {\r\n\ \ \ \ \ \ \ \ return\ "Triangulo\:\ "\ +\ super.dimeNombre();\r\n\ \ \ \ }\r\n
-comment3.params=fig
-comment3.target=boolean\ equals(java.lang.Object)
-numComments=4
+comment0.params=x\ y\ a\ b
+comment0.target=Triangulo(int,\ int,\ float,\ float)
+comment1.params=g
+comment1.target=void\ dibuja(java.awt.Graphics)
+numComments=2
