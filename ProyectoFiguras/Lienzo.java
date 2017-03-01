@@ -10,6 +10,8 @@ public class Lienzo extends JPanel {
         figuras = new ArrayList<Figura>();
         figuras.add(new Circulo(50, 50, 50));
         figuras.add(new Cuadrado(100, 100, 50));
+        figuras.add(new Cuadrado(200, 200, 50));
+        figuras.add(new Circulo(250, 250, 50));
     }
     
     @Override

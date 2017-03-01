@@ -15,6 +15,6 @@ public class Cuadrado extends Figura {
     public void dibuja (Graphics g) {
         Color verde = new Color(0, 255, 0);
         g.setColor(verde);
-        g.drawRect(super.dimeX(), super.dimeY(), (int)lado, (int)lado);
+        g.drawRect(dimeX(), dimeY(), (int)lado, (int)lado);
     }
 }

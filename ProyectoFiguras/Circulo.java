@@ -12,6 +12,8 @@ public class Circulo extends Figura {
     
     @Override
     public void dibuja (Graphics g) {
-        g.drawOval(super.dimeX(), super.dimeY(), (int)radio, (int)radio);
+        Color rojo = new Color(255, 0, 0);
+        g.setColor(rojo);
+        g.drawOval(dimeX(), dimeY(), (int)radio, (int)radio);
     }
 }
