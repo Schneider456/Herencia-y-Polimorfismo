@@ -14,6 +14,10 @@ public class Triangulo extends Figura {
     
     @Override
     public void dibuja (Graphics g) {
-        
+        Color azul = new Color(0, 0, 255);
+        g.setColor(azul);
+        g.drawLine(dimeX(), dimeY(), dimeX() + (int)base / 2, dimeY() + (int)altura);
+        g.drawLine(dimeX(), dimeY(), dimeX() - (int)base / 2, dimeY() + (int)altura);
+        g.drawLine(dimeX() + (int)base / 2, dimeY() + (int)altura, dimeX() - (int)base / 2, dimeY() + (int)altura);
     }
 }
