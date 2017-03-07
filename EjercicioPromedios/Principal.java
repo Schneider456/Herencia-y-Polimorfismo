@@ -8,7 +8,7 @@ public class Principal {
         banc.agregaCuenta(c1);
         banc.agregaCuenta(c2);
         banc.agregaCuenta(c3);
-        System.out.println("Saldo promedio = " + banc.calculaPromedioCuentas());
+        System.out.println("Saldo promedio = " + banc.calculaPromedio());
         
         Planeta planet = new Planeta();
         Pais p1 = new Pais(25000000);
@@ -17,6 +17,6 @@ public class Principal {
         planet.agregaPais(p1);
         planet.agregaPais(p2);
         planet.agregaPais(p3);
-        System.out.println("Promedio de habitantes = " + planet.promedio());
+        System.out.println("Promedio de habitantes = " + planet.calculaPromedio());
     }
 }
