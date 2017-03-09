@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class CuentaBancaria {
     private int saldo;
     
@@ -9,3 +10,16 @@ public class CuentaBancaria {
         return saldo;
     }
 }
+=======
+public class CuentaBancaria implements Medible{
+    private int saldo;
+    
+    public CuentaBancaria (int s) {
+        saldo = s;
+    }
+    
+    public int obtenerMedida () {
+        return saldo;
+    }
+}
+>>>>>>> origin/master
