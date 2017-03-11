@@ -4,6 +4,7 @@ public class Banco {
     
     public Banco () {
         cuentas = new ArrayList<CuentaBancaria>();
+        CuentaBancaria []arrCuentas;
     }
     
     public void agregaCuenta (CuentaBancaria account) {
@@ -11,6 +12,7 @@ public class Banco {
     }
     
     public float calculaPromedio () {
-        Utileria.calculaPromedio(cuentas);
+        return Utileria.calculaPromedio(arrCuentas);
     }
+    
 }
