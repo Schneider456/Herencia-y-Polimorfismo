@@ -1,5 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.awt.Color;
 
 public class Pelota {
     private int posx;
@@ -12,11 +13,18 @@ public class Pelota {
         posx = x;
         posy = y;
         radio = r;
-        incx = 10;
-        incy = 10;
+        int aleatorio = (int)(Math.random() * 2);
+        if (aleatorio == 0) {
+            aleatorio = -1;
+        }
+        incx = aleatorio * 10;
+        incy = aleatorio * 10;
     }
     
     public void dibujate(Graphics g) {
+        Color color = new Color(0, 255, 0);
+        g.setColor(color);
+        g.fillOval(posx, posy, radio*2, radio*2);
         g.drawOval(posx, posy, radio*2, radio*2);
     }
     
