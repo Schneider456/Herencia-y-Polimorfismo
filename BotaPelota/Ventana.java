@@ -20,6 +20,7 @@ public class Ventana extends JFrame {
 
         // Agregar el escuchador del temporizador
         EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
+        tiempo = new Timer(50, escuchaTiempo);
         tiempo.start();
         
         this.setSize(ancho, alto);
